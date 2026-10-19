@@ -3,11 +3,12 @@ app.py - Streamlit Frontend Dashboard for DocuMind AI
 Provides drag-and-drop document upload and an interactive RAG chat interface.
 """
 
+import os
 import streamlit as st
 import requests
 
-# FastAPI Backend URL
-API_URL = "http://127.0.0.1:8000"
+# FastAPI Backend URL (Defaults to local, switches to Docker container name if set)
+API_URL = os.getenv("API_URL", "http://127.0.0.1:8000")
 
 st.set_page_config(
     page_title="DocuMind AI",
