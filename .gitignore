@@ -1,0 +1,19 @@
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# Local Vector Database Storage
+vector_db_storage/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment Variables
+.env
+
+# Uploaded data files (optional, keeps repo clean)
+data/*.pdf
